@@ -1,0 +1,375 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>to assure you!</title>
+
+  <meta
+    name="description"
+    content="A little place to breathe, express your thoughts, and feel reassured."
+  />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Cormorant+Garamond:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Background Effects -->
+  <div class="noise"></div>
+  <div class="vignette"></div>
+
+  <!-- Floating Particles -->
+  <div class="particles" aria-hidden="true">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- Top Decoration -->
+  <header class="topbar">
+    <div class="sigil">✦</div>
+
+    <div class="topline"></div>
+
+    <div class="moon">☾</div>
+  </header>
+
+
+  <!-- Main Application -->
+  <main class="app">
+
+    <!-- =========================
+         HOME SCREEN
+    ========================== -->
+
+    <section id="home" class="screen active">
+
+      <div class="ornament top">
+        ✦ ───────── ✧ ───────── ✦
+      </div>
+
+      <p class="eyebrow">
+        A little place made for you
+      </p>
+
+      <h1>
+        to assure you<span>!</span>
+      </h1>
+
+      <div class="divider">
+        <i></i>
+        <b>♢</b>
+        <i></i>
+      </div>
+
+      <p class="intro">
+        The purpose of this is not to stop your feelings or thoughts;
+        <strong>please keep expressing them to me.</strong>
+      </p>
+
+      <button class="gold-button" id="startBtn">
+
+        <span>
+          I need to be assured
+        </span>
+
+        <b>
+          →
+        </b>
+
+      </button>
+
+      <p class="tiny-note">
+        You can always tell me what is on your mind.
+      </p>
+
+      <div class="ornament bottom">
+        ✦ ───────── ✧ ───────── ✦
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         QUESTIONS SCREEN
+    ========================== -->
+
+    <section id="questions" class="screen">
+
+      <div class="section-heading">
+
+        <p class="eyebrow">
+          Tell me what's on your mind
+        </p>
+
+        <h2>
+          I feel like I am<span>…</span>
+        </h2>
+
+        <div class="mini-divider">
+          ✦
+        </div>
+
+      </div>
+
+
+      <div class="cards">
+
+        <!-- Future -->
+        <button
+          class="thought-card"
+          data-answer="future"
+        >
+
+          <span class="card-icon">
+            ❤️
+          </span>
+
+          <span class="card-text">
+            Afraid of the future
+          </span>
+
+          <span class="card-arrow">
+            ↗
+          </span>
+
+        </button>
+
+
+        <!-- Distance -->
+        <button
+          class="thought-card"
+          data-answer="distance"
+        >
+
+          <span class="card-icon">
+            🌍
+          </span>
+
+          <span class="card-text">
+            The distance between us worries me
+          </span>
+
+          <span class="card-arrow">
+            ↗
+          </span>
+
+        </button>
+
+
+        <!-- Missing -->
+        <button
+          class="thought-card"
+          data-answer="miss"
+        >
+
+          <span class="card-icon">
+            🫂
+          </span>
+
+          <span class="card-text">
+            I miss you and need reassurance
+          </span>
+
+          <span class="card-arrow">
+            ↗
+          </span>
+
+        </button>
+
+
+        <!-- Overthinking -->
+        <button
+          class="thought-card"
+          data-answer="overthinking"
+        >
+
+          <span class="card-icon">
+            💭
+          </span>
+
+          <span class="card-text">
+            Overthinking things
+          </span>
+
+          <span class="card-arrow">
+            ↗
+          </span>
+
+        </button>
+
+
+        <!-- Not The Right Fit -->
+        <button
+          class="thought-card"
+          data-answer="fit"
+        >
+
+          <span class="card-icon">
+            🥺
+          </span>
+
+          <span class="card-text">
+            Feeling like I’m not the right fit
+          </span>
+
+          <span class="card-arrow">
+            ↗
+          </span>
+
+        </button>
+
+
+        <!-- Losing Each Other -->
+        <button
+          class="thought-card"
+          data-answer="lose"
+        >
+
+          <span class="card-icon">
+            💔
+          </span>
+
+          <span class="card-text">
+            Afraid we might lose each other
+          </span>
+
+          <span class="card-arrow">
+            ↗
+          </span>
+
+        </button>
+
+      </div>
+
+
+      <button
+        class="text-button"
+        id="homeBtn"
+      >
+        ← Back
+      </button>
+
+    </section>
+
+
+    <!-- =========================
+         ANSWER SCREEN
+    ========================== -->
+
+    <section id="answer" class="screen">
+
+      <button
+        class="close-button"
+        id="backBtn"
+        aria-label="Go back"
+      >
+        ×
+      </button>
+
+
+      <!-- Purple Glow -->
+      <div class="answer-glow"></div>
+
+
+      <!-- Icon -->
+      <div
+        class="answer-icon"
+        id="answerIcon"
+      >
+        ❤️
+      </div>
+
+
+      <p
+        class="eyebrow"
+        id="answerEyebrow"
+      >
+        A thought you don't have to carry alone
+      </p>
+
+
+      <!-- Question -->
+      <h2 id="answerTitle">
+        Afraid of the future
+      </h2>
+
+
+      <div class="gold-line">
+        ✦
+      </div>
+
+
+      <!-- Answer -->
+      <div class="answer-box">
+
+        <p id="answerText"></p>
+
+      </div>
+
+
+      <!-- Footer -->
+      <div class="answer-footer">
+
+        <span>♡</span>
+
+        <span>
+          I'm listening.
+        </span>
+
+        <span>♡</span>
+
+      </div>
+
+
+      <!-- More -->
+      <button
+        class="gold-button smaller"
+        id="moreBtn"
+      >
+
+        <span>
+          There’s something else on my mind
+        </span>
+
+        <b>
+          →
+        </b>
+
+      </button>
+
+    </section>
+
+  </main>
+
+
+  <!-- Mouse Glow -->
+  <div class="cursor-glow"></div>
+
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+
+</body>
+</html>
+```
